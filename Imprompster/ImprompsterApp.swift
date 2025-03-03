@@ -1,6 +1,6 @@
 //
-//  Speech_and_Debate_Prompt_GeneratorApp.swift
-//  Speech and Debate Prompt Generator
+//  Imprompster.swift
+//  Imprompster
 //
 //  Created by Alek Vasek on 2/28/25.
 //

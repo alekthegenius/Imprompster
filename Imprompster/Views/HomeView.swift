@@ -1,6 +1,6 @@
 //
 //  HomeView.swift
-//  Speech and Debate Prompt Generator
+//  Imprompster
 //
 //  Created by Alek Vasek on 2/28/25.
 //

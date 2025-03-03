@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		8BAD40512D72585B000A1FA9 /* Speech and Debate Prompt Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speech and Debate Prompt Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAD40512D72585B000A1FA9 /* Imprompster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imprompster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		8BAD40522D72585B000A1FA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BAD40512D72585B000A1FA9 /* Speech and Debate Prompt Generator.app */,
+				8BAD40512D72585B000A1FA9 /* Imprompster.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BAD40502D72585B000A1FA9 /* Speech and Debate Prompt Generator */ = {
+		8BAD40502D72585B000A1FA9 /* Imprompster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BAD405F2D72585D000A1FA9 /* Build configuration list for PBXNativeTarget "Speech and Debate Prompt Generator" */;
+			buildConfigurationList = 8BAD405F2D72585D000A1FA9 /* Build configuration list for PBXNativeTarget "Imprompster" */;
 			buildPhases = (
 				8BAD404D2D72585B000A1FA9 /* Sources */,
 				8BAD404E2D72585B000A1FA9 /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				8BAD40532D72585B000A1FA9 /* Imprompster */,
 			);
-			name = "Speech and Debate Prompt Generator";
+			name = Imprompster;
 			packageProductDependencies = (
 			);
 			productName = "Speech and Debate Prompt Generator";
-			productReference = 8BAD40512D72585B000A1FA9 /* Speech and Debate Prompt Generator.app */;
+			productReference = 8BAD40512D72585B000A1FA9 /* Imprompster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BAD404C2D72585B000A1FA9 /* Build configuration list for PBXProject "Speech and Debate Prompt Generator" */;
+			buildConfigurationList = 8BAD404C2D72585B000A1FA9 /* Build configuration list for PBXProject "Imprompster" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BAD40502D72585B000A1FA9 /* Speech and Debate Prompt Generator */,
+				8BAD40502D72585B000A1FA9 /* Imprompster */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Speech and Debate Prompt Generator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Imprompster/Preview Content\"";
 				DEVELOPMENT_TEAM = D5PLU6T88Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -281,7 +281,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Speech and Debate Prompt Generator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Imprompster/Preview Content\"";
 				DEVELOPMENT_TEAM = D5PLU6T88Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +307,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BAD404C2D72585B000A1FA9 /* Build configuration list for PBXProject "Speech and Debate Prompt Generator" */ = {
+		8BAD404C2D72585B000A1FA9 /* Build configuration list for PBXProject "Imprompster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BAD405D2D72585D000A1FA9 /* Debug */,
@@ -316,7 +316,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BAD405F2D72585D000A1FA9 /* Build configuration list for PBXNativeTarget "Speech and Debate Prompt Generator" */ = {
+		8BAD405F2D72585D000A1FA9 /* Build configuration list for PBXNativeTarget "Imprompster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BAD40602D72585D000A1FA9 /* Debug */,
