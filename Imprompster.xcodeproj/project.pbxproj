@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8BAD40532D72585B000A1FA9 /* Speech and Debate Prompt Generator */ = {
+		8BAD40532D72585B000A1FA9 /* Imprompster */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Speech and Debate Prompt Generator";
+			path = Imprompster;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		8BAD40482D72585B000A1FA9 = {
 			isa = PBXGroup;
 			children = (
-				8BAD40532D72585B000A1FA9 /* Speech and Debate Prompt Generator */,
+				8BAD40532D72585B000A1FA9 /* Imprompster */,
 				8BAD40522D72585B000A1FA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8BAD40532D72585B000A1FA9 /* Speech and Debate Prompt Generator */,
+				8BAD40532D72585B000A1FA9 /* Imprompster */,
 			);
 			name = "Speech and Debate Prompt Generator";
 			packageProductDependencies = (
@@ -255,6 +255,7 @@
 				DEVELOPMENT_TEAM = D5PLU6T88Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Imprompster;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -265,7 +266,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "alektech.Speech-and-Debate-Prompt-Generator";
+				PRODUCT_BUNDLE_IDENTIFIER = alektech.Imprompster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -284,6 +285,7 @@
 				DEVELOPMENT_TEAM = D5PLU6T88Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Imprompster;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "alektech.Speech-and-Debate-Prompt-Generator";
+				PRODUCT_BUNDLE_IDENTIFIER = alektech.Imprompster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

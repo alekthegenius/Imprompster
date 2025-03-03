@@ -11,7 +11,7 @@ import SwiftUI
 struct Speech_and_Debate_Prompt_GeneratorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
