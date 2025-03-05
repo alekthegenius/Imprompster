@@ -95,19 +95,19 @@ struct SpeechPromptCardView: View {
         switch promptType {
         case "impromptuAll":
             generatedPrompt = viewModel.randomTpRes()
-            cardTitle = "Team Policy Resolution"
+            cardTitle = "Any Topic, Impromptu"
         case "impromptuColor":
             generatedPrompt = viewModel.randomParliAllRes()
-            cardTitle = "All Types, Parliamentary Resolution"
+            cardTitle = "Colors, Impromptu"
         case "impromptuQuote":
             generatedPrompt = viewModel.randomParliPolicyRes()
-            cardTitle = "Policy, Parliamentary Resolution"
+            cardTitle = "Quotes, Impromptu"
         case "impromptuObject":
             generatedPrompt = viewModel.randomParliValueRes()
-            cardTitle = "Value, Parliamentary Resolution"
+            cardTitle = "Objects, Impromptu"
         case "impromptuEvent":
             generatedPrompt = viewModel.randomParliScenarioRes()
-            cardTitle = "Scenario, Parliamentary Resolution"
+            cardTitle = "Events, Impromptu"
         case "parliFact":
             generatedPrompt = viewModel.randomParliFactRes()
             cardTitle = "Fact, Parliamentary Resolution"
