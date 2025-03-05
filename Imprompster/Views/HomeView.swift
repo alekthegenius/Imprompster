@@ -7,69 +7,153 @@
 
 import SwiftUI
 
+
+enum NavigationDestinations: String, CaseIterable, Hashable {
+    case DebateGenerator
+    case SpeechGenerator
+    case ParliResolutionSelector
+}
+
 struct HomeView: View {
+    
+    let screens = NavigationDestinations.allCases
+    @State private var path: [String] = []
+    
+    
+    
     var body: some View {
-        ZStack {
-            
-            
-            Color.pink
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
+        NavigationStack(path: $path) {
+            ZStack {
                 
-                Text("Imprompster")
-                    .foregroundStyle(.white)
-                    .font(.system(size: 15, weight: .bold, design: .monospaced))
-                    .padding(.top, 50)
+                
+                Color.mint
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
                     
-                
-                Spacer()
-                
-                
-                Button { // Debate Resolution Generator
-                    
-                } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 30)
-                            .foregroundStyle(Color.white)
+                            .foregroundStyle(Color.mint)
                             .frame(width: 300, height: 60)
                             .shadow(radius: 5, x: 5, y: 5)
+                        Text("Imprompster")
+                            .foregroundStyle(.white)
+                            .font(.system(size: 32.5, weight: .bold, design: .monospaced))
+                            .shadow(radius: 5, x: 7, y: 7)
+                            
+                    }
+                    .padding(.top, 20)
                         
-                        Text("Debate Resolution Generator")
-                            .foregroundStyle(.black)
-                            .font(.system(size: 18, weight: .bold))
+                    
+                    Spacer()
+                    
+                    
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .foregroundStyle(.white)
+                            .frame(width: 360, height: 210)
+                            .shadow(radius: 5, x: 5, y: 5)
+                        
                             
                             
+                            
+                        
+                        VStack(spacing: 40) {
+                            
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 30)
+                                    .foregroundStyle(Color.pink)
+                                    .frame(width: 300, height: 60)
+                                    .shadow(radius: 5, x: 5, y: 5)
+                                
+                                
+                                Button {
+                                    path.append("debateGenerator")
+                                } label: {
+                                    
+                                    Text("Debate Resolution Generator")
+                                        .foregroundStyle(.white)
+                                        .font(.system(size: 18, weight: .bold))
+                                    
+                                }
+                                
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .frame(height: 50)
+                            
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 30)
+                                    .foregroundStyle(Color.pink)
+                                    .frame(width: 300, height: 60)
+                                    .shadow(radius: 5, x: 5, y: 5)
+                                
+                                
+                                Button {
+                                    path.append("speechGenerator")
+                                } label: {
+                                    
+                                    Text("Speech Prompt Generator")
+                                        .foregroundStyle(.white)
+                                        .font(.system(size: 18, weight: .bold))
+                                    
+                                }
+                                
+                                
+                                
+                                
+                                
+                                
+                            }
+                            .frame(height: 50)
+                            
+
+                        }
+                        
+                    }
+                    .navigationDestination(for: String.self) { value in
+                        if value == "debateGenerator" {
+                            DebateGeneratorView(path: $path)
+                        } else if value == "speechGenerator" {
+                            SpeechGeneratorView(path: $path)
+                        } else if value == "parlimentaryGenerator" {
+                            ParliResSelectorView()
+                        } else if value == "impromptyGenerator" {
+                            
+                        } else {
+                            DebateGeneratorView(path: $path)
+                        }
+                    }
+                    
+                    
+                    Spacer()
+                    
+                    Rectangle()
+                        .foregroundStyle(.white)
+                        .frame(height: 2)
+                    
+                    HStack { // Footer
+                        Text("From TX With ❤️ © 2025 by Alek Vask")
+                            .foregroundStyle(.white)
+                            .font(.system(size: 15, weight: .medium))
+                        
+                    }
+                    .padding(.top, 10)
+                    
+                    HStack { // Footer
+                        Text("Parli Resolutions Retrieved from AcePeak (Discontinued)")
+                            .foregroundStyle(.white)
+                            .font(.system(size: 12, weight: .medium))
                         
                     }
                 }
-                .frame(height: 50)
-                .padding(.bottom, 15)
-                
-                
-                Button { // Speech Generator
-                    
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 30)
-                            .foregroundStyle(Color.white)
-                            .frame(width: 300, height: 60)
-                            .shadow(radius: 5, x: 5, y: 5)
-                        
-                        Text("Debate Resolution Generator")
-                            .foregroundStyle(.black)
-                            .font(.system(size: 18, weight: .bold))
-                            
-                            
-                        
-                    }
-                }
-                .frame(height: 50)
-                .padding(.top, 15)
-                
-                Spacer()
             }
         }
+        .toolbar(.hidden)
+        
     }
     
 }
