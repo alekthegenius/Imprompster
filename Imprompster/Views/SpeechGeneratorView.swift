@@ -77,7 +77,7 @@ struct SpeechGeneratorView: View {
                                 
                                 Button {
                                     isSpeechCardShowing.toggle()
-                                    speechType = "tp"
+                                    speechType = "extemperaneous"
                                 } label: {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30)
@@ -98,13 +98,13 @@ struct SpeechGeneratorView: View {
                                     .frame(height: 50)
                                 }
                                 .sheet(isPresented: $isSpeechCardShowing) {
-                                    DebateResolutionCardView(cardType: $speechType)
+                                    SpeechPromptCardView(promptType: $speechType)
                                 }
                                 
                                 
                                 Button {
                                     isSpeechCardShowing.toggle()
-                                    speechType = "ld"
+                                    speechType = "apologetics"
                                 } label: {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30)
@@ -126,12 +126,12 @@ struct SpeechGeneratorView: View {
                                     
                                 }
                                 .sheet(isPresented: $isSpeechCardShowing) {
-                                    DebateResolutionCardView(cardType: $speechType)
+                                    SpeechPromptCardView(promptType: $speechType)
                                 }
                                 
                                 Button {
                                     isSpeechCardShowing.toggle()
-                                    speechType = "ld"
+                                    speechType = "marsHill"
                                 } label: {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 30)
@@ -153,7 +153,7 @@ struct SpeechGeneratorView: View {
                                     
                                 }
                                 .sheet(isPresented: $isSpeechCardShowing) {
-                                    DebateResolutionCardView(cardType: $speechType)
+                                    SpeechPromptCardView(promptType: $speechType)
                                 }
                             }
                             .frame(width: proxy.size.width,  height: proxy.size.height)
@@ -166,7 +166,6 @@ struct SpeechGeneratorView: View {
             
             
         }
-        .navigationTransition(.automatic)
         .toolbarBackground(.hidden, for: .navigationBar)
         .toolbarColorScheme(.dark)
     }

@@ -133,7 +133,6 @@ struct DebateGeneratorView: View {
             
             
         }
-        .navigationTransition(.automatic)
         .toolbarBackground(.hidden, for: .navigationBar)
         .toolbarColorScheme(.dark)
     }

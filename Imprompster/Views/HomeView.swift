@@ -121,8 +121,8 @@ struct HomeView: View {
                             SpeechGeneratorView(path: $path)
                         } else if value == "parlimentaryGenerator" {
                             ParliResSelectorView()
-                        } else if value == "impromptyGenerator" {
-                            
+                        } else if value == "impromptuGenerator" {
+                            ImpromptuPromptSelectorView()
                         } else {
                             DebateGeneratorView(path: $path)
                         }
@@ -135,20 +135,27 @@ struct HomeView: View {
                         .foregroundStyle(.white)
                         .frame(height: 2)
                     
+                    ScrollView(.horizontal, showsIndicators: false){
+                        LazyHStack { // Footer
+                            Text("Parli Resolutions Retrieved from AcePeak (Discontinued), Colors are From (meodai/color-names, Github), Quotes are From (Abirate/english-quotes, HuggingFace), Apologetics and Mars Hill Prompts taken from STOA USA")
+                                .foregroundStyle(.white)
+                                .font(.system(size: 14, weight: .medium))
+                            
+                        }
+                    }
+                    .frame(height: 14)
+                    .padding(.horizontal, 12)
+                    .padding(.top, 10)
+                    
                     HStack { // Footer
                         Text("From TX With ❤️ © 2025 by Alek Vask")
                             .foregroundStyle(.white)
                             .font(.system(size: 15, weight: .medium))
                         
                     }
-                    .padding(.top, 10)
+                    .padding(.vertical, 5)
                     
-                    HStack { // Footer
-                        Text("Parli Resolutions Retrieved from AcePeak (Discontinued)")
-                            .foregroundStyle(.white)
-                            .font(.system(size: 12, weight: .medium))
-                        
-                    }
+                    
                 }
             }
         }

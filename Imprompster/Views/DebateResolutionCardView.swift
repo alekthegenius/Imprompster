@@ -15,14 +15,16 @@ struct DebateResolutionCardView: View {
     
     @Binding var cardType: String
     
-    @State var generatedResolution: String = ""
+    @State private var generatedResolution: String = ""
     
-    @State var cardTitle: String = ""
+    @State private var cardTitle: String = ""
+    
+    @State private var cardBGColor: Color = .teal
     
     
     var body: some View {
         ZStack {
-            Color.teal
+            cardBGColor
                 .ignoresSafeArea()
             
             VStack {
@@ -42,7 +44,6 @@ struct DebateResolutionCardView: View {
                     Text(generatedResolution)
                         .foregroundStyle(.white)
                         .font(.system(size: 21, weight: .regular, design: .monospaced))
-                        .shadow(radius: 5, x: 5, y: 5)
                 }
                 .padding(.horizontal, 10)
                 
@@ -55,8 +56,8 @@ struct DebateResolutionCardView: View {
                             .stroke(.white, lineWidth: 2)
                             .frame(width: 220, height: 47.5)
                         
-                        Text("Generate Another")
-                            .foregroundStyle(.teal)
+                        Text("Regenerate")
+                            .foregroundStyle(cardBGColor)
                             .font(.system(size: 20, weight: .bold, design: .monospaced))
                     }
                 }

@@ -53,7 +53,7 @@ struct ParliResSelectorView: View {
                                         
                                         Text("All Types")
                                             .foregroundStyle(.white)
-                                            .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                            .font(.system(size: 20, weight: .bold))
                                             .shadow(radius: 5, x: 5, y: 5)
                                     }
                                 }
@@ -75,7 +75,7 @@ struct ParliResSelectorView: View {
                                         
                                         Text("Policy Resolution")
                                             .foregroundStyle(.white)
-                                            .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                            .font(.system(size: 20, weight: .bold))
                                             .shadow(radius: 5, x: 5, y: 5)
                                     }
                                 }
@@ -97,7 +97,7 @@ struct ParliResSelectorView: View {
                                         
                                         Text("Value Resolution")
                                             .foregroundStyle(.white)
-                                            .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                            .font(.system(size: 20, weight: .bold))
                                             .shadow(radius: 5, x: 5, y: 5)
                                     }
                                 }
@@ -119,7 +119,7 @@ struct ParliResSelectorView: View {
                                         
                                         Text("Fact Resolution")
                                             .foregroundStyle(.white)
-                                            .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                            .font(.system(size: 20, weight: .bold))
                                             .shadow(radius: 5, x: 5, y: 5)
                                     }
                                 }
@@ -141,7 +141,7 @@ struct ParliResSelectorView: View {
                                         
                                         Text("Scenario Resolution")
                                             .foregroundStyle(.white)
-                                            .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                            .font(.system(size: 20, weight: .bold))
                                             .shadow(radius: 5, x: 5, y: 5)
                                     }
                                 }

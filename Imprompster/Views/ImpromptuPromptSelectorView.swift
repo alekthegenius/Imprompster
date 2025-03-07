@@ -25,7 +25,7 @@ struct ImpromptuPromptSelectorView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 15)
                                 .foregroundStyle(.indigo)
-                                .frame(height: 100)
+                                .frame(height: 50)
                                 .padding(.horizontal, 20)
                                 .shadow(radius: 5, x: 5, y: 5)
                             
@@ -40,7 +40,7 @@ struct ImpromptuPromptSelectorView: View {
                         
                         VStack(spacing: 20) {
                             Button {
-                                impromptuSpeechType = "parliAny"
+                                impromptuSpeechType = "impromptuAll"
                                 isSpeechCardShowing.toggle()
                             } label: {
                                 ZStack {
@@ -53,16 +53,16 @@ struct ImpromptuPromptSelectorView: View {
                                     
                                     Text("Any Topic")
                                         .foregroundStyle(.white)
-                                        .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(radius: 5, x: 5, y: 5)
                                 }
                             }
                             .sheet(isPresented: $isSpeechCardShowing) {
-                                DebateResolutionCardView(cardType: $impromptuSpeechType)
+                                SpeechPromptCardView(promptType: $impromptuSpeechType)
                             }
                             
                             Button {
-                                impromptuSpeechType = "parliPolicy"
+                                impromptuSpeechType = "impromptuColor"
                                 isSpeechCardShowing.toggle()
                             } label: {
                                 ZStack {
@@ -75,16 +75,16 @@ struct ImpromptuPromptSelectorView: View {
                                     
                                     Text("Colors")
                                         .foregroundStyle(.white)
-                                        .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(radius: 5, x: 5, y: 5)
                                 }
                             }
                             .sheet(isPresented: $isSpeechCardShowing) {
-                                DebateResolutionCardView(cardType: $impromptuSpeechType)
+                                SpeechPromptCardView(promptType: $impromptuSpeechType)
                             }
                             
                             Button {
-                                impromptuSpeechType = "parliValue"
+                                impromptuSpeechType = "impromptuQuote"
                                 isSpeechCardShowing.toggle()
                             } label: {
                                 ZStack {
@@ -97,16 +97,16 @@ struct ImpromptuPromptSelectorView: View {
                                     
                                     Text("Quotes")
                                         .foregroundStyle(.white)
-                                        .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(radius: 5, x: 5, y: 5)
                                 }
                             }
                             .sheet(isPresented: $isSpeechCardShowing) {
-                                DebateResolutionCardView(cardType: $impromptuSpeechType)
+                                SpeechPromptCardView(promptType: $impromptuSpeechType)
                             }
                             
                             Button {
-                                impromptuSpeechType = "parliFact"
+                                impromptuSpeechType = "impromptuObject"
                                 isSpeechCardShowing.toggle()
                             } label: {
                                 ZStack {
@@ -119,16 +119,16 @@ struct ImpromptuPromptSelectorView: View {
                                     
                                     Text("Objects")
                                         .foregroundStyle(.white)
-                                        .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(radius: 5, x: 5, y: 5)
                                 }
                             }
                             .sheet(isPresented: $isSpeechCardShowing) {
-                                DebateResolutionCardView(cardType: $impromptuSpeechType)
+                                SpeechPromptCardView(promptType: $impromptuSpeechType)
                             }
                             
                             Button {
-                                impromptuSpeechType = "parliScenario"
+                                impromptuSpeechType = "impromptuEvent"
                                 isSpeechCardShowing.toggle()
                             } label: {
                                 ZStack {
@@ -141,12 +141,12 @@ struct ImpromptuPromptSelectorView: View {
                                     
                                     Text("Events")
                                         .foregroundStyle(.white)
-                                        .font(.system(size: 20, weight: .bold, design: .monospaced))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(radius: 5, x: 5, y: 5)
                                 }
                             }
                             .sheet(isPresented: $isSpeechCardShowing) {
-                                DebateResolutionCardView(cardType: $impromptuSpeechType)
+                                SpeechPromptCardView(promptType: $impromptuSpeechType)
                             }
                             
                             
