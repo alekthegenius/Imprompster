@@ -33,7 +33,7 @@ This project is licensed under the [MIT-License](https://mit-license.org/). Refe
 This project would not be possible without the extensive, open-source, databases that developers have maintained. I am especially grateful for:
 - AcePeak, a now discontinued parlimentary resolution, which I was able to retrieve there resolutions from and reuse in my code.
 - [meodai/color-names](https://github.com/meodai/color-names), which I used for the color prompts in the Impromptu Generator.
-- [asuender/motivational-quotes](https://huggingface.co/datasets/asuender/motivational-quotes), which I used for the quote prompts in the Impromptu Generator.
+- [m-ric/english_historical_quotes](https://huggingface.co/datasets/m-ric/english_historical_quotes), which I used for the quote prompts in the Impromptu Generator.
 - [StoaUSA](https://www.stoausa.org/), which I used to retrieve the latest Mars Hill and Apologetic Topics and Prompts.
 
 ---
