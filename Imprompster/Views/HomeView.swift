@@ -137,7 +137,7 @@ struct HomeView: View {
                     
                     ScrollView(.horizontal, showsIndicators: false){
                         LazyHStack { // Footer
-                            Text("Parli Resolutions Retrieved from AcePeak (Discontinued), Colors are From (meodai/color-names, Github), Quotes are From (Abirate/english-quotes, HuggingFace), Apologetics and Mars Hill Prompts taken from STOA USA")
+                            Text("Parli Resolutions Retrieved from AcePeak (Discontinued), Colors are From (meodai/color-names, Github), Quotes are From (m-ric/english_historical_quotes, HuggingFace), Apologetics and Mars Hill Prompts taken from STOA USA")
                                 .foregroundStyle(.white)
                                 .font(.system(size: 14, weight: .medium))
                             

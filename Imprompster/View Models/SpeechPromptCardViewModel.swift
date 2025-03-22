@@ -149,7 +149,7 @@ extension SpeechPromptCardView {
             } while newPrompt.isEmpty || newPrompt == lastStoredPrompt
             
             finalPrompt = newPrompt.components(separatedBy: "::")
-            cleanedFinalPrompt = (finalPrompt[0], "- \(finalPrompt[1])")
+            cleanedFinalPrompt = ("\"\(finalPrompt[0])\"", "- \(finalPrompt[1])")
             
             
             guard finalPrompt.count == 2 else {
