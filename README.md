@@ -15,7 +15,7 @@ An open-source, ad-free, prompt and resolution generator app, tailored (though n
 ## Roadmap
 
  - [x] Create Initial App, with Prompts and Resolutions
- - [ ] Finalize and Launch on the App Store
+ - [x] Finalize and Launch on the App Store
  - [ ] Create Version 2, with a Practice Mode, and possibly a GPT-based Prompt Generator Engine.
  - [ ] Add more resolutions and prompts. (Specifically for Team Policy, Lincoln Douglas, and Extemperaneous.)
 
